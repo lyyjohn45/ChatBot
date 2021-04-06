@@ -25,4 +25,11 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     <pattern>My name is *</pattern>
     <template>Hello <person/></template>
   </category>
+  <<topic name="Flower">>
+    <category>
+        <pattern>Yes</pattern>
+        <that>Do you like garderning?</that>
+        <template>What is your favorite flower?</template>
+    </category>
+  </topic>
 </aiml>
