@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Students grades are uploaded by months
+greet the user,
+use the user name in greetings if the user declares it,
+conduct a conversation of at least three exchanges across two topics.
+support at least 5 different questions per topic. 
+When it doesn't understand the topic the chatbot behaves like a Rogerian psychotherapist.
+
+Please include a readme file with the topics that your chatbot support, 5 sample questions that can be answered by your chatbot under each topic.
+-->
+<aiml>
+  <category>
+    <pattern>Hi</pattern>
+    <template>Hi, my name is Benben, the new robot. What is your name?</template>
+  </category>
+  <category>
+    <pattern>Hello</pattern>
+    <template><srai>Hi</srai></template>
+  </category>
+  <category>
+    <pattern>Hi</pattern>
+    <template>Hi there!</template>
+  </category>
+  <category>
+    <pattern>My name is *</pattern>
+    <template>Hello <person/></template>
+  </category>
+</aiml>
