@@ -33,13 +33,21 @@ Please include a readme file with the topics that your chatbot support, 5 sample
       <pattern>Talk about flowers</pattern>
       <template>Yes, let's talk about <set name = "topic">flowers</set>!</template>  
   </category>
+    <category>
+      <pattern>Talk about flower</pattern>
+      <template>Yes, let's talk about <set name = "topic">flowers</set>!</template>  
+  </category>
+    <category>
+      <pattern>Talk about cats</pattern>
+      <template>Yes, let's talk about <set name = "topic">cats</set>!</template>  
+  </category>
   <category>
       <pattern>Talk about cat</pattern>
       <template>Yes, let's talk about <set name = "topic">cats</set>!</template>  
   </category>  
   <category>
     <pattern> * </pattern>
-    <template>Humm, interesting! why don't we talk about flowers or car?</template>
+    <template>Humm, interesting! why don't we talk about flowers or cat?</template>
   </category>  
 
   <topic name="FLOWERS">
@@ -85,6 +93,7 @@ Please include a readme file with the topics that your chatbot support, 5 sample
                 <li>Don't water too them too much.</li>
                 <li>Honey bees are flowers best friends.</li>
                 <li>Always wear gloves when garderning!</li>
+                <li>Some flowers like full sun and some like half sun. Some of them also prefer shade.</li>
             </random>
         </template>
     </category>
@@ -99,7 +108,39 @@ Please include a readme file with the topics that your chatbot support, 5 sample
       <template>Wow, nice! ask me more about flowers or cat.</template>
     </category>   
   </topic>
-  <topic name="CAT">
+  <topic name="CATS">
+    <category>
+        <pattern>What is your favorite breed of cat</pattern>
+        <template>My favorate flower is Norwegian Forest cat. What is your favorite cat?</template>
+    </category>
+    
+    <category>
+        <pattern>My favorite cat is *</pattern>
+        <template><star/> is the cutest. Do you want to know a fun fact about cats?</template>
+    </category>
+
+    <category>
+        <pattern>I like * </pattern>
+        <template>I like <star/> too. Do you want to know a fun fact about cats?</template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <random>
+                <li>Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.</li>
+                <li>A group of cats is called a clowder.</li>
+                <li>Cats sleep 70% of their lives.</li>
+                <li>Cats have over 20 muscles that control their ears.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO</pattern>
+        <template>Why the rejection? What is your favorite cat?</template>
+    </category>      
+    
     <category>
       <pattern> * </pattern>
       <template>Wow, nice! ask me more about cat or flowers.</template>
