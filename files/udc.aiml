@@ -18,18 +18,91 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     <template><srai>Hi</srai></template>
   </category>
   <category>
-    <pattern>Hi</pattern>
+    <pattern>hi</pattern>
     <template>Hi there!</template>
   </category>
+  <category>
+    <pattern>Hey</pattern>
+    <template>Hey hey</template>
+  </category>  
   <category>
     <pattern>My name is *</pattern>
     <template>Hello <person/></template>
   </category>
-  <<topic name="Flower">>
+  <category>
+      <pattern>Talk about flowers</pattern>
+      <template>Yes, let's talk about <set name = "topic">flowers</set>!</template>  
+  </category>
+  <category>
+      <pattern>Talk about cat</pattern>
+      <template>Yes, let's talk about <set name = "topic">cats</set>!</template>  
+  </category>  
+  <category>
+    <pattern> * </pattern>
+    <template>Humm, interesting! why don't we talk about flowers or car?</template>
+  </category>  
+
+  <topic name="FLOWERS">
     <category>
-        <pattern>Yes</pattern>
-        <that>Do you like garderning?</that>
-        <template>What is your favorite flower?</template>
+        <pattern>What is your favoraite flower</pattern>
+        <template>My favorate flower is rose. What is your favorite flower?</template>
     </category>
+    
+    <category>
+        <pattern>My favorite flower is *</pattern>
+        <template><star/> is indeed beautiful.</template>
+    </category>
+
+    <category>
+        <pattern>I like * </pattern>
+        <template>I like <star/> too. Do you want to know a gardening tip?</template>
+    </category>
+    
+    <category>
+        <pattern>What is the national flower of United States</pattern>
+        <template>The national flower of United States is rose. Do you want to know a gardening tip?</template>
+    </category>
+
+    <category>
+        <pattern>Which flower is best for beginner</pattern>
+        <template>Daisies are very beginner friendly. Do you want to know a gardening tip?</template>
+    </category>
+    
+    <category>
+        <pattern>Which flower repels bugs</pattern>
+        <template>The Sage is an indispensable plant for the sunny perennial border, attracting beneficial bees but offering nothing to browsing bug pests. Do you want to know a gardening tip?</template>
+    </category>   
+
+    <category>
+        <pattern>Can you recommond me a indoor flowering plant?</pattern>
+        <template>African violets are one of the most popular houseplants of all time with vibrant flowers. Do you want to know a gardening tip?</template>
+    </category>
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <random>
+                <li>Don't water too them too much.</li>
+                <li>Honey bees are flowers best friends.</li>
+                <li>Always wear gloves when garderning!</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <template>Why the rejection? What is your favorite flower?</template>
+    </category>    
+    
+    <category>
+      <pattern> * </pattern>
+      <template>Wow, nice! ask me more about flowers or cat.</template>
+    </category>   
+  </topic>
+  <topic name="CAT">
+    <category>
+      <pattern> * </pattern>
+      <template>Wow, nice! ask me more about cat or flowers.</template>
+    </category> 
   </topic>
 </aiml>
