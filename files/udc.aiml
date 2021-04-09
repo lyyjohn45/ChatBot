@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Students grades are uploaded by months
+<!--
 greet the user,
 use the user name in greetings if the user declares it,
 conduct a conversation of at least three exchanges across two topics.
@@ -47,18 +47,18 @@ Please include a readme file with the topics that your chatbot support, 5 sample
   </category>  
   <category>
     <pattern> * </pattern>
-    <template>Humm, interesting! why don't we talk about flowers or cat?</template>
+    <template>Humm, interesting! why don't we talk about flowers or cats?</template>
   </category>  
 
   <topic name="FLOWERS">
     <category>
-        <pattern>What is your favoraite flower</pattern>
-        <template>My favorate flower is rose. What is your favorite flower?</template>
+        <pattern>What is your favorite flower</pattern>
+        <template>My favorite flower is rose. What is your favorite flower?</template>
     </category>
     
     <category>
         <pattern>My favorite flower is *</pattern>
-        <template><star/> is indeed beautiful.</template>
+        <template><star/> is indeed beautiful. Do you want to know a gardening tip?</template>
     </category>
 
     <category>
@@ -72,7 +72,7 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     </category>
 
     <category>
-        <pattern>Which flower is best for beginner</pattern>
+        <pattern>Which flower is the best for beginner</pattern>
         <template>Daisies are very beginner friendly. Do you want to know a gardening tip?</template>
     </category>
     
@@ -82,9 +82,14 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     </category>   
 
     <category>
-        <pattern>Can you recommond me a indoor flowering plant?</pattern>
-        <template>African violets are one of the most popular houseplants of all time with vibrant flowers. Do you want to know a gardening tip?</template>
+        <pattern>Can you recommend me an indoor flowering plant</pattern>
+        <template>African violet is one of the most popular houseplants of all time with vibrant flowers. Do you want to know a gardening tip?</template>
     </category>
+    
+    <category>
+        <pattern>Which flower represents love</pattern>
+        <template>Red rose. Do you want to know a gardening tip?</template>
+    </category>    
 
     <category>
         <pattern>YES</pattern>
@@ -100,18 +105,18 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     
     <category>
         <pattern>NO</pattern>
-        <template>Why the rejection? What is your favorite flower?</template>
+        <template>Why the rejection? What is your favorite cat?</template>
     </category>    
     
     <category>
       <pattern> * </pattern>
-      <template>Wow, nice! ask me more about flowers or cat.</template>
-    </category>   
+      <template>Wow, nice! Ask me more about flowers or cats.</template>
+    </category>
   </topic>
   <topic name="CATS">
     <category>
         <pattern>What is your favorite breed of cat</pattern>
-        <template>My favorate flower is Norwegian Forest cat. What is your favorite cat?</template>
+        <template>My favorite cat is Norwegian Forest cat. What is your favorite cat?</template>
     </category>
     
     <category>
@@ -128,7 +133,7 @@ Please include a readme file with the topics that your chatbot support, 5 sample
         <pattern>YES</pattern>
         <template>
             <random>
-                <li>Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.</li>
+                <li>Cats are the most popular pet in the United States: There are 88 million pet cats.</li>
                 <li>A group of cats is called a clowder.</li>
                 <li>Cats sleep 70% of their lives.</li>
                 <li>Cats have over 20 muscles that control their ears.</li>
@@ -139,11 +144,36 @@ Please include a readme file with the topics that your chatbot support, 5 sample
     <category>
         <pattern>NO</pattern>
         <template>Why the rejection? What is your favorite cat?</template>
-    </category>      
+    </category>
+
+    <category>
+        <pattern>Which cat breed is name after a state</pattern>
+        <template>Maine Coon. Do you want to know a fun fact about cats?</template>
+    </category>
+    
+    <category>
+        <pattern>Which cat breed has silver fur</pattern>
+        <template>Korat. Do you want to know a fun fact about cats?</template>
+    </category>
+
+    <category>
+        <pattern>Why do cats purr</pattern>
+        <template>Cats purr when they're content. Do you want to know a fun fact about cats?</template>
+    </category>
+
+    <category>
+        <pattern>How often do cats sleep</pattern>
+        <template>12 and 16 hours a day. Do you want to know a fun fact about cats?</template>
+    </category>
+
+    <category>
+        <pattern>why do cats love catnip</pattern>
+        <template>Cats love catnip which is due to an autosomal gene.. Do you want to know a fun fact about cats?</template>
+    </category>  
     
     <category>
       <pattern> * </pattern>
-      <template>Wow, nice! ask me more about cat or flowers.</template>
+      <template>Wow, nice! Ask me more about cats or flowers.</template>
     </category> 
   </topic>
 </aiml>
